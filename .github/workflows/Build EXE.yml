@@ -25,5 +25,8 @@ jobs:
         sudo apt-get install python3-distutils
         pip install pyinstaller
       
+    - name: Copy openvoice_app.py
+      run: cp openvoice/openvoice_app.py .
+    
     - name: Build OpenVoice
       run: pyinstaller --onefile openvoice_app.py
