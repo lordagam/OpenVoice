@@ -26,4 +26,4 @@ jobs:
         pip install pyinstaller
       
     - name: Build OpenVoice
-      run: pyinstaller --onefile OpenVoice.py
+      run: pyinstaller --onefile openvoice_app.py
