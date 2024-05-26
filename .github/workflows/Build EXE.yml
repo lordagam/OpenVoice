@@ -23,6 +23,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
         sudo apt-get install python3-distutils
+        pip install pyinstaller
       
     - name: Build OpenVoice
       run: pyinstaller --onefile OpenVoice.py
